@@ -39,8 +39,8 @@ for tab in driver.window_handles:
 currentTab = driver.execute_script("return document.querySelector('#outlet > portal-app-container').shadowRoot.querySelector('#nav-background > portal-nav-menu').shadowRoot.querySelector('omni-style > omni-nav-menu').shadowRoot.querySelector('#Campaigns > omni-tooltip > div:nth-child(1) > a > omni-icon').shadowRoot.querySelector('div > svg')")
 currentTab.click()
 time.sleep(10)
-url = driver.current_url
-driver.get_screenshot_as_file("url + .png")
+url1 = driver.current_url
+driver.get_screenshot_as_file("url1 + .png")
 time.sleep(20)
 
 currentTab = driver.current_window_handle
@@ -50,8 +50,8 @@ for tab in driver.window_handles:
 currentTab = driver.execute_script("return document.querySelector('#outlet > portal-app-container').shadowRoot.querySelector('#nav-background > portal-nav-menu').shadowRoot.querySelector('omni-style > omni-nav-menu').shadowRoot.querySelector('#Reports > omni-tooltip > div:nth-child(1) > a')")
 currentTab.click()
 time.sleep(10)
-url = driver.current_url
-driver.get_screenshot_as_file("url + .png")
+url2 = driver.current_url
+driver.get_screenshot_as_file("url2 + .png")
 #driver.get_screenshot_as_file("Reports.png")
 time.sleep(10)
 
